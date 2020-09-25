@@ -12,12 +12,6 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 Base.classes.keys()
 
-Measurement = Base.classes.measurement
-
-# TODO: change timestamp to date
-
-# date filter
-date_filter = Measurement.date >= "1980-01-01"
 
 # 2. Create an app, being sure to pass __name__
 app = Flask(__name__)

@@ -1,0 +1,11 @@
+import requests
+import pandas as pd
+import json
+import numpy as np
+Token = GdFhEnwuEBVdoBhKaNvQMIfrscbxiubZ
+
+baseurl = 'https://www.ncdc.noaa.gov/cdo-web/api/v2/datasets?datasetid=GHCND'
+requests.get(baseurl)
+
+d = json.loads(r.text)
+
