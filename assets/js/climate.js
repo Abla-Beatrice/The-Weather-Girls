@@ -1,4 +1,4 @@
-var map = L.map("map-id", {
+var map = L.map("map", {
   center: [37.09, -95.71],
   zoom: 4,
 });
@@ -15,26 +15,42 @@ L.tileLayer(
   }
 ).addTo(map);
 
-d3.text("../../extreme2.csv").then(function (csv) {
-  data = d3.csvParseRows(csv);
-  data.forEach(function (data) {
-    data[5] = +data[5];
-    data[1] = data[1].toString();
-  });
-  data = data.filter((row) => row[9] == "EMXP");
-  data = data.filter((row) => row[1].includes("1992", 0));
-  createMarkers(data);
-});
+var layerGroup = L.layerGroup().addTo(map);
 
-function createMarkers(row_data) {
-  row_data.map((row) => {
-    var city_prcp = L.circle([row[11], row[12]], {
-      weight: 0.5,
-      fillOpacity: .5,
-      color: "black",
-      fillColor: "blue",
-      radius: row[5] * 300,
+document.addEventListener("DOMContentLoaded", function () {
+  d3.text("../../extreme2.csv").then(function (csv) {
+    data = d3.csvParseRows(csv);
+
+    data.forEach(function (data) {
+      data[5] = +data[5];
+      data[1] = data[1].toString();
     });
-    city_prcp.addTo(map);
+    data = data.filter((row) => row[9] == "EMXP");
+    var landingData = data.filter((row) => row[1].includes("1980"));
+    createMarkers(landingData);
+    var sliderYear = document.getElementById("sliderYear");
+    sliderYear.innerHTML = "Selected Year: 1980"
+
+    document.getElementById("slider").addEventListener("input", function (e) {
+      var year = e.target.value;
+      sliderYear.innerHTML = `Selected Year: ${year}`;
+      var newData = data.filter((row) => row[1].includes(year));
+
+      layerGroup.clearLayers();
+      createMarkers(newData);
+    });
   });
-}
+
+  function createMarkers(row_data) {
+    row_data.map((row) => {
+      var city_prcp = L.circle([row[11], row[12]], {
+        weight: 0.5,
+        fillOpacity: 0.5,
+        color: "black",
+        fillColor: "blue",
+        radius: row[5] * 300,
+      }).bindPopup("<h3>" + "Maximum Precipitation: " + row[5] + " inches");
+      city_prcp.addTo(layerGroup);
+    });
+  }
+});

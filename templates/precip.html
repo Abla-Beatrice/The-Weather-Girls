@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Max Precipitation</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      crossorigin=""
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <!-- Our CSS -->
+    <link href="../assets/css/main.a3f694c0.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html" title="">
+          </a>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./home.html" title="" class="active">Home</a></li>
+            <li><a href="./precip.html" title=""> Maximum Precipitation</a></li>
+            <li><a href="./graph2.html" title=""> Maximum Temperature</a></li>
+            <li><a href="./graph3.html" title=""> Graph3</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- The div that holds our map -->
+    <div id="map"></div>
+    <div class="map-overlay top">
+      <div class="map-overlay-inner">
+        <h2 id="sliderYear"></h2>
+        <label id="year"></label>
+        <input id="slider" type="range" min="1980" max="2009" step="1" value="0" />
+      </div>
+    </div>
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Leaflet JavaScript -->
+    <script
+      src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+      integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+      crossorigin=""
+    ></script>
+
+    <!-- API Key -->
+    <script type="text/javascript" src="../assets/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="../assets/js/climate.js"></script>
+  </body>
+</html>
