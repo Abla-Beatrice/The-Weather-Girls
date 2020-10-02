@@ -1,6 +1,6 @@
  
 
-d3.json("all_over90.json").then(function(data){
+d3.json("../../all_over90.json").then(function(data){
  
 
     console.log(data);
