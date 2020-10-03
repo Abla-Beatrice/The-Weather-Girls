@@ -55,6 +55,7 @@ var satellite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/
         collapsed: false
     }).addTo(map);
 
+    
 d3.csv("../assets/Data/extreme2.csv").then(function (csv) {
   csv.forEach(function (data) {
     data['value'] = +data['value'];
