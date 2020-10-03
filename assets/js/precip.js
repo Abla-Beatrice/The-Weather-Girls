@@ -2,7 +2,6 @@ var map = L.map("map", {
   center: [37.09, -95.71],
   zoom: 4,
 });
-
 // Create the tile layer that will be the background of our map
 L.tileLayer(
   "https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
@@ -14,13 +13,10 @@ L.tileLayer(
     accessToken: API_KEY,
   }
 ).addTo(map);
-
 var layerGroup = L.layerGroup().addTo(map);
-
 document.addEventListener("DOMContentLoaded", function () {
   d3.text("../../extreme2.csv").then(function (csv) {
     data = d3.csvParseRows(csv);
-
     data.forEach(function (data) {
       data[5] = +data[5];
       data[1] = data[1].toString();
@@ -30,17 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
     createMarkers(landingData);
     var sliderYear = document.getElementById("sliderYear");
     sliderYear.innerHTML = "Selected Year: 1980"
-
     document.getElementById("slider").addEventListener("input", function (e) {
       var year = e.target.value;
       sliderYear.innerHTML = `Selected Year: ${year}`;
       var newData = data.filter((row) => row[1].includes(year));
-
       layerGroup.clearLayers();
       createMarkers(newData);
     });
   });
-
   function createMarkers(row_data) {
     row_data.map((row) => {
       var city_prcp = L.circle([row[11], row[12]], {
