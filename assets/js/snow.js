@@ -42,12 +42,12 @@ var satellite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/
     
 
 // Create the map with the default settings
-    var map = L.map("map-id", {
-        center: [
-          40.7, -94.5
-        ],
-        zoom: 3,
-        layers: [outdoors, satellite, lightmap]
+var map = L.map("map", {
+  center: [
+    37.09, -95.71
+  ],
+  zoom: 5,
+    layers: [outdoors, satellite, lightmap]
     });
 
     // add the control to the map where the user can choose the layers they wish to display
@@ -55,6 +55,7 @@ var satellite = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/
         collapsed: false
     }).addTo(map);
 
+    
 d3.csv("../assets/Data/extreme2.csv").then(function (csv) {
   csv.forEach(function (data) {
     data['value'] = +data['value'];
@@ -78,8 +79,8 @@ function createMarkers(sn_data, sd_data) {
     var sn_data_point = L.circle([row['latitude'], row['longitude']], {
       weight: 0.5,
       fillOpacity: .5,
-      color: "black",
-      fillColor: "red",
+      color: "purple",
+      fillColor: "purple",
       radius: row['value'] * 100,
     });
     sn_data_point.addTo(EMSN);
@@ -89,7 +90,7 @@ function createMarkers(sn_data, sd_data) {
     var sd_data_point = L.circle([row['latitude'], row['longitude']], {
       weight: 0.5,
       fillOpacity: .5,
-      color: "black",
+      color: "orange",
       fillColor: "orange",
       radius: row['value'] * 100,
     });

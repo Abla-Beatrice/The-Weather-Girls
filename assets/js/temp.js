@@ -1,6 +1,6 @@
  
 
-d3.json("../../all_over90.json").then(function(data){
+d3.json("../assets/Data/all_over90.json").then(function(data){
  
 
     console.log(data);
@@ -62,7 +62,7 @@ d3.json("../../all_over90.json").then(function(data){
 
 
 
-  d3.json("all_over90.json").then(function(result) { 
+  d3.json("../assets/Data/all_over90.json").then(function(result) { 
     console.log(result.results[11].city_name)
 
     var results = result.results
