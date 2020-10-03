@@ -1,6 +1,6 @@
 # Climate Change Visualization
 
-This project was completed by Abla, Kelsie and Winnie with a lot of help from Dr Boahemaa Adu-Oppong.
+This project was completed by Abla, Kelsie and Winnie with invaluable assistance from Dr Boahemaa Adu-Oppong.
 
 We are creating an interactive dashboard looking at various aspects of climate change
 Using Python APIs, Pandas, SQL, HTML/CSS, D3.js, JavaScript
