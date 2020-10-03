@@ -1,107 +1,70 @@
 # Climate Change Visualization
 
-This project was completed by Abla, Kelsie and Winnie with invaluable assistance from Dr Boahemaa Adu-Oppong.
+This project was completed by [Abla](https://github.com/Abla-Beatrice), [Kelsie](https://github.com/kelsiehargita) and [Winnie](https://github.com/climbr88) with invaluable assistance from [Dr Boahemaa Adu-Oppong](https://github.com/abenaa07).
 
-We are creating an interactive dashboard looking at various aspects of climate change
-Using Python APIs, Pandas, SQL, HTML/CSS, D3.js, JavaScript
+The purpose of this data dashboard is looking at various aspects of climate change via the use of datasets and graphs that clearly demonstrate the Maximum Precipitation, Maximum Tempreture and Maximum Snowfall & Snow Deph in United States. 
+
+* Features:
+
+   * Python APIs
+   * Pandas
+   * SQL 
+   * HTML/CSS 
+   * D3.js 
+   * JavaScript
 
 
  <p align="center">
-    LINKS
+    LINK
     <br />
-    <a href="https://github.com/Abla-Beatrice/The-Weather-Girls"><strong>Our Repo</strong></a>
-    <br />
-    <br />
-    <a href="https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets">NOAA API Link</a>
-    <br />
-    <a href="https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/">Mapbox Documentation for Sliders</a>
+    <a href="https://github.com/Abla-Beatrice/The-Weather-Girls"><strong> Repository</strong></a>
+    <br />  
   </p>
 </p>
 
 
-
-### Dependencies
-
-import pandas as pd
-<br/>
-import json
-<br/>
-from sqlalchemy import create_engine
-<br/>
-from config import api_key
-<br/>
-import requests
-<br/>
-import time
-<br/>
-import numpy as np
-<br/>
-chartJS
-<br/>
-postgresql db
-
-
-
-
-
 ### ETL
 
-Data came from API calls to the NOAA's Climate Data Portal
+**NOAA** Climate.gov Data
+[Here](https://www.climate.gov/maps-data/datasets/formats/json "LINK")
 
-<a href="https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets">Link to NOAA Data Source</a>
+A range of environmental datasets (weather, air & sea temperature) mainly for the US.
+
+Link to **NOAA API** used [Here]("https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets")
+
+## Technologies Used
+
+- [Python 3.6.10](https://docs.python.org/3.10/library/) and its ecosystem are extremely popular tools in the world of data analysis.
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - The project uses JavaScript to add interactivity to the dashboard and to retrieve certain data from CSV files for graphs and charts.
 
 
-
-
-
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+- [Chart.js](https://d3js.org/)
+    - The project uses Chart.js order to style the prebuilt charts.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+- The dashbaord is hosted via GitHub Pages and is deployed from the master branch - this is to allow the deployed dashboard to automatically update with any new commits that are made to the master branch.
 
-## Built With
+    - To deploy the dashboard to GitHub Pages, first clicked the settings tab on the GitHub repository for the site.
+    - From here, scrolled to the GitHub Pages section of the setting tab and changed the Source from 'none' to 'master branch'.
+    - This deployed the dashboard to GitHub Pages and provided me with a link to the hosted page, which then copied and pasted into the decription of the repository.
+    
+- To run this application locally:
+    - Click the green 'clone or download' button in the [GitHub repository for the project](https://github.com/Abla-Beatrice/The-Weather-Girls).
+    - Copy the link provided by clicking the clipboard button to the right of the link.
+    - In your terminal, type `git clone`, paste in the previously copied link, and hit return.
+    - The application should now be installed on your device.
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Credits
+
+### Content
+- Template used [Mashup Template](http://www.mashup-template.com/templates.html) 
+
+- To create a slider for vizualisation, go to [Mapbox GL JS]("https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/")
 
 
+### Media
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+- The image used in the dashboard  can be found at [Unsplash](https://unsplash.com/).
