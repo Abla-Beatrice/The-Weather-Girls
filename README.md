@@ -2,7 +2,7 @@
 
 This project was completed by [Abla](https://github.com/Abla-Beatrice), [Kelsie](https://github.com/kelsiehargita) and [Winnie](https://github.com/climbr88) with invaluable assistance from [Dr Boahemaa Adu-Oppong](https://github.com/abenaa07).
 
-The purpose of this data dashboard is looking at various aspects of climate change via the use of datasets and graphs that clearly demonstrate the Maximum Precipitation, Maximum Tempreture and Maximum Snowfall & Snow Deph in United States. 
+The purpose of this data dashboard is looking at various aspects of climate change via the use of datasets and graphs that clearly demonstrate the Maximum Precipitation, Maximum Temperature and Maximum Snowfall & Snow Depth in United States. 
 
 * Features:
 
@@ -45,11 +45,11 @@ Link to **NOAA API** used [Here]("https://www.ncdc.noaa.gov/cdo-web/webservices/
 
 ## Deployment
 
-- The dashbaord is hosted via GitHub Pages and is deployed from the master branch - this is to allow the deployed dashboard to automatically update with any new commits that are made to the master branch.
+- The dashboard is hosted via GitHub Pages and is deployed from the master branch - this is to allow the deployed dashboard to automatically update with any new commits that are made to the master branch.
 
     - To deploy the dashboard to GitHub Pages, first clicked the settings tab on the GitHub repository for the site.
     - From here, scrolled to the GitHub Pages section of the setting tab and changed the Source from 'none' to 'master branch'.
-    - This deployed the dashboard to GitHub Pages and provided me with a link to the hosted page, which then copied and pasted into the decription of the repository.
+    - This deployed the dashboard to GitHub Pages and provided me with a link to the hosted page, which then copied and pasted into the description of the repository.
     
 - To run this application locally:
     - Click the green 'clone or download' button in the [GitHub repository for the project](https://github.com/Abla-Beatrice/The-Weather-Girls).
@@ -62,7 +62,7 @@ Link to **NOAA API** used [Here]("https://www.ncdc.noaa.gov/cdo-web/webservices/
 ### Content
 - Template used [Mashup Template](http://www.mashup-template.com/templates.html) 
 
-- To create a slider for vizualisation, go to [Mapbox GL JS]("https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/")
+- To create a slider for visualization, go to [Mapbox GL JS]("https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/")
 
 
 ### Media
