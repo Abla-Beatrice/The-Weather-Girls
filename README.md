@@ -1,8 +1,29 @@
 # Climate Change Visualization
+![Home](assets/images/Home.JPG)
 
 This project was completed by [Abla](https://github.com/Abla-Beatrice), [Kelsie](https://github.com/kelsiehargita) and [Winnie](https://github.com/climbr88) with invaluable assistance from [Dr Boahemaa Adu-Oppong](https://github.com/abenaa07).
 
 The purpose of this data dashboard is looking at various aspects of climate change via the use of datasets and graphs that clearly demonstrate the Maximum Precipitation, Maximum Temperature and Maximum Snowfall & Snow Depth in United States. 
+
+* Maximum Precipitation
+![Max_Precipitation](assets/images/Max_Precipitation.png)
+
+* Maximum Temperature Line_Chart
+![Line_chart](assets/images/MaxTempLine.png)
+
+* Maximum Temperature Bar_Chart
+![Bar_chart](assets/images/MaxTempBar.png)
+
+* Maximum Snowfall
+![Maximum Snowfall](assets/images/EMSN.JPG)
+
+* Maximum Snow Depth
+![Maximum Snow Depth](assets/images/EMSD.JPG)
+
+* Maximum Snowfall & Snow Depth 
+![Maximum Snowfall & Snow Depth ](assets/images/SN&SD_Sat.JPG)
+
+
 
 * Features:
 
@@ -23,14 +44,19 @@ The purpose of this data dashboard is looking at various aspects of climate chan
 </p>
 
 
-### ETL
+## ETL
 
 **NOAA** Climate.gov Data
 [Here](https://www.climate.gov/maps-data/datasets/formats/json "LINK")
 
 A range of environmental datasets (weather, air & sea temperature) mainly for the US.
 
-Link to **NOAA API** used [Here]("https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets")
+Link to **NOAA API** used [Here](https://www.ncdc.noaa.gov/cdo-web/webservices/v2#datasets)
+
+
+**Mapbox**
+
+Overview of the Mapbox Maps service APIs [Here](https://docs.mapbox.com/api/maps/)
 
 ## Technologies Used
 
@@ -62,7 +88,7 @@ Link to **NOAA API** used [Here]("https://www.ncdc.noaa.gov/cdo-web/webservices/
 ### Content
 - Template used [Mashup Template](http://www.mashup-template.com/templates.html) 
 
-- To create a slider for visualization, go to [Mapbox GL JS]("https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/")
+- To create a slider for visualization, go to [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/example/timeline-animation/)
 
 
 ### Media
