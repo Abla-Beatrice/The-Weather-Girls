@@ -1,6 +1,8 @@
 # Climate Change Visualization
 ![Home](assets/images/Home.JPG)
 
+## Description & Analysis
+
 This project was completed by [Abla](https://github.com/Abla-Beatrice), [Kelsie](https://github.com/kelsiehargita) and [Winnie](https://github.com/climbr88) with invaluable assistance from [Dr Boahemaa Adu-Oppong](https://github.com/abenaa07).
 
 The purpose of this data dashboard is looking at various aspects of climate change via the use of datasets and graphs that clearly demonstrate the Maximum Precipitation, Maximum Temperature and Maximum Snowfall & Snow Depth in United States. 
